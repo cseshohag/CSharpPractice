@@ -24,5 +24,26 @@ namespace HelloWorld.Controllers
             ViewBag.Name = "Shohag";
             return View();
         }
+
+        public ActionResult Sum(int a , int b)
+        {
+            int sum = a + b;
+            ViewBag.Sum = sum;
+
+            return View("Index");
+        }
+
+        public ViewResult Show()
+        {
+            List<string> Names = new List<string>();
+            Names.Add("Shohag");
+            Names.Add("Himo");
+            Names.Add("Shohag");
+            Names.Add("Himo");
+            Names.Add("Shohag");
+            Names.Add("Himo");
+            ViewBag.Name = Names;
+            return View();
+        }
     }
 }
