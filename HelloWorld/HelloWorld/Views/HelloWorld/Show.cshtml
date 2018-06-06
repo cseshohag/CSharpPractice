@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Show";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{ 
+    List<string> Name = ViewBag.Name;
+}
+
+<h2>Show</h2>
+@{ 
+    foreach(string Names in Name)
+    {
+        <h2>@Names</h2>
+    }
+}
